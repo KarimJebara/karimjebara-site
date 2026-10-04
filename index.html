@@ -103,13 +103,6 @@
       </div>
     </section>
 
-    <section class="own">
-      <div class="wrap narrow">
-        <p class="tag" data-nl="Een voorbeeld uit eigen keuken" data-en="An example from my own kitchen">Een voorbeeld uit eigen keuken</p>
-        <h3 data-nl="Ik gebruik zelf maatwerk." data-en="I use custom software myself.">Ik gebruik zelf maatwerk.</h3>
-        <p data-nl="Mijn eigen verkoopassistent zoekt bedrijven in de buurt, leest hun website, schrijft een persoonlijk voorstel dat ik zelf nalees en goedkeur, en houdt bij wie reageert. Klein, precies op mijn werkwijze afgestemd, en van mij." data-en="My own sales assistant finds businesses nearby, reads their website, drafts a personal proposal that I read and approve myself, and keeps track of who replies. Small, tuned exactly to the way I work, and mine.">Mijn eigen verkoopassistent zoekt bedrijven in de buurt, leest hun website, schrijft een persoonlijk voorstel dat ik zelf nalees en goedkeur, en houdt bij wie reageert. Klein, precies op mijn werkwijze afgestemd, en van mij.</p>
-      </div>
-    </section>
 
     <section class="experience">
       <div class="wrap narrow">
@@ -190,7 +183,7 @@
       btn.addEventListener('click', function () { apply(current === 'nl' ? 'en' : 'nl'); });
       if (current !== 'nl') apply(current);
 
-      var items = document.querySelectorAll('.rows li, .cases li, .own .wrap > *, .experience .wrap > *, .flow li, .statement p, .about .big, .contact .wrap > *');
+      var items = document.querySelectorAll('.rows li, .cases li, .experience .wrap > *, .flow li, .statement p, .about .big, .contact .wrap > *');
       if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         items.forEach(function (el) { el.classList.add('reveal'); });
         var io = new IntersectionObserver(function (entries) {
