@@ -3,24 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Karim Jebara Software · Maatwerksoftware voor het MKB in Leiden</title>
-  <meta name="description" content="Maatwerksoftware, data en AI voor kleine en middelgrote bedrijven en organisaties rond Leiden. Software die van u is, in plaats van dure licenties.">
-  <meta property="og:title" content="Karim Jebara Software">
-  <meta property="og:description" content="Software die van uw bedrijf is. Maatwerk, data en AI voor het MKB rond Leiden.">
+  <title>Karim Jebara · Software op maat voor het MKB in Leiden</title>
+  <meta name="description" content="Ik bouw software, data- en AI-oplossingen voor kleine en middelgrote bedrijven en non-profits rond Leiden. Software die van u is, in plaats van dure licenties.">
+  <meta property="og:title" content="Karim Jebara · Software die van u is">
+  <meta property="og:description" content="Software op maat, data en AI voor het MKB en non-profits rond Leiden.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://karimjebara.nl/">
   <meta property="og:image" content="https://karimjebara.nl/karim.jpg">
-  <meta name="theme-color" content="#0f2a4a">
+  <meta name="theme-color" content="#f6f0e6">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/Fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <header class="top">
     <div class="wrap bar">
-      <a class="brand" href="#top" aria-label="Karim Jebara Software"><span class="mark">KJ</span><span class="brand-name">Karim Jebara Software</span></a>
+      <a class="brand" href="#top"><img src="karim.jpg" width="40" height="40" alt=""><span>Karim Jebara</span></a>
       <nav class="nav" aria-label="Menu">
-        <a href="#wat" data-nl="Wat ik bouw" data-en="What I build">Wat ik bouw</a>
-        <a href="#werkwijze" data-nl="Werkwijze" data-en="How it works">Werkwijze</a>
+        <a href="#werk" data-nl="Wat ik maak" data-en="What I make">Wat ik maak</a>
+        <a href="#zo" data-nl="Zo werk ik" data-en="How I work">Zo werk ik</a>
         <a href="#contact" data-nl="Contact" data-en="Contact">Contact</a>
         <button class="lang" type="button" id="lang" aria-label="Switch language">EN</button>
       </nav>
@@ -30,68 +33,94 @@
   <main id="top">
     <section class="hero">
       <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow" data-nl="Maatwerksoftware · data · AI · Leiden" data-en="Custom software · data · AI · Leiden">Maatwerksoftware · data · AI · Leiden</p>
-          <h1 data-nl="Software die van uw bedrijf is." data-en="Software that belongs to your business.">Software die van uw bedrijf is.</h1>
-          <p class="lead" data-nl="Ik bouw software, data- en AI-oplossingen voor het MKB en non-profits rond Leiden. Geen dure licenties per gebruiker: u bezit wat ik bouw, en ik onderhoud het voor u." data-en="I build software, data and AI solutions for small and medium-sized businesses and non-profits around Leiden. No expensive per-user licences: you own what I build, and I maintain it for you.">Ik bouw software, data- en AI-oplossingen voor het MKB en non-profits rond Leiden. Geen dure licenties per gebruiker: u bezit wat ik bouw, en ik onderhoud het voor u.</p>
+        <div class="hero-text">
+          <p class="hello" data-nl="Hoi, ik ben Karim." data-en="Hi, I'm Karim.">Hoi, ik ben Karim.</p>
+          <h1><span data-nl="Software die " data-en="Software that's ">Software die </span><em data-nl="van u" data-en="yours">van u</em><span data-nl=" is." data-en=".">&nbsp;is.</span></h1>
+          <p class="lead" data-nl="Ik bouw de tools die uw team echt nodig heeft, van planning tot slimme automatisering. Geen dure licenties per gebruiker: u bezit wat ik bouw en ik onderhoud het voor u." data-en="I build the tools your team actually needs, from planning to smart automation. No expensive per-user licences: you own what I build and I look after it for you.">Ik bouw de tools die uw team echt nodig heeft, van planning tot slimme automatisering. Geen dure licenties per gebruiker: u bezit wat ik bouw en ik onderhoud het voor u.</p>
           <div class="cta">
-            <a class="btn primary" href="mailto:karim@karimjebara.nl?subject=Kennismaking" data-nl="Plan een kennismaking" data-en="Book an intro call">Plan een kennismaking</a>
-            <a class="btn" href="https://www.linkedin.com/in/karim-jebara-923694273/" rel="noopener" target="_blank">LinkedIn</a>
+            <a class="btn" href="mailto:karim@karimjebara.nl?subject=Kennismaking" data-nl="Zeg hallo" data-en="Say hello">Zeg hallo</a>
+            <a class="link" href="https://www.linkedin.com/in/karim-jebara-923694273/" rel="noopener" target="_blank">LinkedIn <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
-        <img class="portrait" src="karim.jpg" width="320" height="320" alt="Karim Jebara">
+        <figure class="photo">
+          <span class="blob" aria-hidden="true"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <img src="karim.jpg" width="360" height="360" alt="Karim Jebara">
+          <figcaption data-nl="Leiden &middot; MKB &amp; non-profits" data-en="Leiden &middot; SMEs &amp; non-profits">Leiden &middot; MKB &amp; non-profits</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section id="wat" class="section">
+    <svg class="wave to-sand" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c120 40 240 40 360 10s240-50 360-30 240 50 360 40 240-40 360-20v40H0z"/></svg>
+
+    <section id="werk" class="sand">
       <div class="wrap">
-        <h2 data-nl="Wat ik voor u bouw" data-en="What I build for you">Wat ik voor u bouw</h2>
-        <div class="cards">
-          <article class="card">
-            <h3 data-nl="Interne tools" data-en="Internal tools">Interne tools</h3>
-            <p data-nl="Eén systeem in plaats van losse lijstjes, mailtjes en spreadsheets. Denk aan planning, aanvragen en administratie, precies zoals uw team werkt." data-en="One system instead of scattered lists, emails and spreadsheets. Think planning, requests and administration, exactly the way your team works.">Eén systeem in plaats van losse lijstjes, mailtjes en spreadsheets. Denk aan planning, aanvragen en administratie, precies zoals uw team werkt.</p>
-          </article>
-          <article class="card">
-            <h3 data-nl="Minder softwarekosten" data-en="Lower software costs">Minder softwarekosten</h3>
-            <p data-nl="Betaalt u per gebruiker voor software die u maar half gebruikt? Een eigen variant met alleen wat u nodig heeft is vaak goedkoper en past beter." data-en="Paying per user for software you only half use? Your own version with only what you need is often cheaper and fits better.">Betaalt u per gebruiker voor software die u maar half gebruikt? Een eigen variant met alleen wat u nodig heeft is vaak goedkoper en past beter.</p>
-          </article>
-          <article class="card">
-            <h3 data-nl="Data en AI" data-en="Data and AI">Data en AI</h3>
-            <p data-nl="Koppelingen, overzichten en slimme automatisering die herhalend werk overnemen, zodat uw mensen tijd overhouden voor het werk dat ertoe doet." data-en="Integrations, dashboards and smart automation that take over repetitive work, so your people have time left for the work that matters.">Koppelingen, overzichten en slimme automatisering die herhalend werk overnemen, zodat uw mensen tijd overhouden voor het werk dat ertoe doet.</p>
-          </article>
-        </div>
+        <h2 data-nl="Wat ik maak" data-en="What I make">Wat ik maak</h2>
+        <ul class="rows">
+          <li>
+            <span class="num">01</span>
+            <h3 data-nl="Tools voor uw team" data-en="Tools for your team">Tools voor uw team</h3>
+            <p data-nl="Eén plek in plaats van losse lijstjes, mailtjes en spreadsheets. Planning, aanvragen, administratie: precies zoals uw mensen werken." data-en="One place instead of scattered lists, emails and spreadsheets. Planning, requests, administration: exactly the way your people work.">Eén plek in plaats van losse lijstjes, mailtjes en spreadsheets. Planning, aanvragen, administratie: precies zoals uw mensen werken.</p>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <h3 data-nl="Minder abonnementen" data-en="Fewer subscriptions">Minder abonnementen</h3>
+            <p data-nl="Betaalt u per gebruiker voor software die u maar half gebruikt? Een eigen variant met alleen wat u nodig heeft is vaak goedkoper en past beter." data-en="Paying per user for software you only half use? Your own version with just what you need is often cheaper and fits better.">Betaalt u per gebruiker voor software die u maar half gebruikt? Een eigen variant met alleen wat u nodig heeft is vaak goedkoper en past beter.</p>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <h3 data-nl="Slimmere data en AI" data-en="Smarter data and AI">Slimmere data en AI</h3>
+            <p data-nl="Koppelingen, overzichten en automatisering die herhalend werk overnemen, zodat er tijd overblijft voor het werk dat ertoe doet." data-en="Integrations, overviews and automation that take over repetitive work, so there is time left for the work that matters.">Koppelingen, overzichten en automatisering die herhalend werk overnemen, zodat er tijd overblijft voor het werk dat ertoe doet.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section id="werkwijze" class="section alt">
+    <svg class="wave to-paper" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c120-30 240-30 360 0s240 50 360 40 240-50 360-40 240 30 360 10v40H0z"/></svg>
+
+    <section id="zo" class="how">
       <div class="wrap">
-        <h2 data-nl="Zo werkt het" data-en="How it works">Zo werkt het</h2>
-        <ol class="steps">
-          <li><strong data-nl="Kennismaking" data-en="Intro call">Kennismaking</strong><span data-nl="Een kort gesprek over hoe uw werk nu gaat en waar het knelt. Geen verplichtingen." data-en="A short conversation about how your work runs now and where it hurts. No obligations.">Een kort gesprek over hoe uw werk nu gaat en waar het knelt. Geen verplichtingen.</span></li>
-          <li><strong data-nl="Voorstel" data-en="Proposal">Voorstel</strong><span data-nl="Een helder voorstel: wat ik bouw, wanneer het klaar is en wat het kost." data-en="A clear proposal: what I build, when it is ready and what it costs.">Een helder voorstel: wat ik bouw, wanneer het klaar is en wat het kost.</span></li>
-          <li><strong data-nl="Bouwen in stappen" data-en="Built in steps">Bouwen in stappen</strong><span data-nl="U ziet regelmatig voortgang en kunt bijsturen, zodat het eindresultaat echt bij u past." data-en="You see progress regularly and can steer, so the end result really fits you.">U ziet regelmatig voortgang en kunt bijsturen, zodat het eindresultaat echt bij u past.</span></li>
-          <li><strong data-nl="Van u, en onderhouden" data-en="Yours, and maintained">Van u, en onderhouden</strong><span data-nl="De software is van uw bedrijf. Wilt u dat ik hem blijf onderhouden en verbeteren? Dat kan." data-en="The software belongs to your company. Want me to keep maintaining and improving it? That is possible.">De software is van uw bedrijf. Wilt u dat ik hem blijf onderhouden en verbeteren? Dat kan.</span></li>
+        <h2 data-nl="Zo werk ik" data-en="How I work">Zo werk ik</h2>
+        <ol class="flow">
+          <li>
+            <h3 data-nl="We maken kennis" data-en="We meet">We maken kennis</h3>
+            <p data-nl="Een kort gesprek over hoe uw werk nu gaat en waar het knelt. Zonder verplichtingen." data-en="A short chat about how your work runs now and where it pinches. No strings attached.">Een kort gesprek over hoe uw werk nu gaat en waar het knelt. Zonder verplichtingen.</p>
+          </li>
+          <li>
+            <h3 data-nl="U krijgt een voorstel" data-en="You get a proposal">U krijgt een voorstel</h3>
+            <p data-nl="Helder en kort: wat ik bouw, wanneer het klaar is en wat het kost." data-en="Clear and short: what I build, when it is ready and what it costs.">Helder en kort: wat ik bouw, wanneer het klaar is en wat het kost.</p>
+          </li>
+          <li>
+            <h3 data-nl="We bouwen in stapjes" data-en="We build in small steps">We bouwen in stapjes</h3>
+            <p data-nl="U ziet regelmatig wat er staat en kunt bijsturen, zodat het echt bij u past." data-en="You regularly see what is there and can steer, so it really fits you.">U ziet regelmatig wat er staat en kunt bijsturen, zodat het echt bij u past.</p>
+          </li>
+          <li>
+            <h3 data-nl="Het is van u" data-en="It's yours">Het is van u</h3>
+            <p data-nl="De software is van uw bedrijf. Wilt u dat ik hem blijf onderhouden en verbeteren? Dat kan." data-en="The software belongs to your company. Want me to keep maintaining and improving it? I can.">De software is van uw bedrijf. Wilt u dat ik hem blijf onderhouden en verbeteren? Dat kan.</p>
+          </li>
         </ol>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap about">
-        <div>
-          <h2 data-nl="Wie ik ben" data-en="Who I am">Wie ik ben</h2>
-          <p data-nl="Ik ben Karim Jebara, oprichter van Karim Jebara Software in Leiden. Ik help kleine en middelgrote organisaties hun werk slimmer te organiseren met software die precies bij hen past. Liever een kort, open gesprek dan een lang verkooppraatje." data-en="I am Karim Jebara, founder of Karim Jebara Software in Leiden. I help small and medium-sized organisations organise their work better with software that fits them exactly. I would rather have a short, open conversation than a long sales pitch.">Ik ben Karim Jebara, oprichter van Karim Jebara Software in Leiden. Ik help kleine en middelgrote organisaties hun werk slimmer te organiseren met software die precies bij hen past. Liever een kort, open gesprek dan een lang verkooppraatje.</p>
-        </div>
+    <section class="statement">
+      <div class="wrap">
+        <p data-nl="Software hoort uw werk lichter te maken, niet zwaarder." data-en="Software should make your work lighter, not heavier.">Software hoort uw werk lichter te maken, niet zwaarder.</p>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="wrap">
-        <h2 data-nl="Laten we kennismaken" data-en="Let's talk">Laten we kennismaken</h2>
-        <p data-nl="Stuur een mail of kijk op LinkedIn. Ik reageer meestal binnen een werkdag." data-en="Send an email or find me on LinkedIn. I usually reply within a working day.">Stuur een mail of kijk op LinkedIn. Ik reageer meestal binnen een werkdag.</p>
-        <div class="cta center">
-          <a class="btn primary" href="mailto:karim@karimjebara.nl">karim@karimjebara.nl</a>
-          <a class="btn light" href="https://www.linkedin.com/in/karim-jebara-923694273/" rel="noopener" target="_blank">LinkedIn</a>
-        </div>
+    <section class="about">
+      <div class="wrap narrow">
+        <h2 data-nl="Even voorstellen" data-en="A quick introduction">Even voorstellen</h2>
+        <p class="big" data-nl="Ik ben Karim Jebara, oprichter van Karim Jebara Software in Leiden. Ik help kleine en middelgrote organisaties hun werk slimmer te organiseren met software die precies bij hen past. Liever een kort, open gesprek dan een lang verkooppraatje." data-en="I'm Karim Jebara, founder of Karim Jebara Software in Leiden. I help small and medium-sized organisations organise their work better with software that fits them exactly. I'd rather have a short, open conversation than a long sales pitch.">Ik ben Karim Jebara, oprichter van Karim Jebara Software in Leiden. Ik help kleine en middelgrote organisaties hun werk slimmer te organiseren met software die precies bij hen past. Liever een kort, open gesprek dan een lang verkooppraatje.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap narrow">
+        <h2 data-nl="Zeg hallo." data-en="Say hello.">Zeg hallo.</h2>
+        <p data-nl="Een mail is genoeg. Ik reageer meestal binnen een werkdag." data-en="An email is enough. I usually reply within a working day.">Een mail is genoeg. Ik reageer meestal binnen een werkdag.</p>
+        <a class="mail" href="mailto:karim@karimjebara.nl">karim@karimjebara.nl</a>
+        <p class="small"><a href="https://www.linkedin.com/in/karim-jebara-923694273/" rel="noopener" target="_blank">LinkedIn &rarr;</a></p>
       </div>
     </section>
   </main>
@@ -99,7 +128,7 @@
   <footer class="foot">
     <div class="wrap">
       <!-- Add the KvK number here once it is known: Karim Jebara Software · KvK 12345678 -->
-      <span>© 2026 Karim Jebara Software · Leiden</span>
+      <span>&copy; 2026 Karim Jebara Software &middot; Leiden</span>
     </div>
   </footer>
 
@@ -110,13 +139,25 @@
       try { current = localStorage.getItem('lang') === 'en' ? 'en' : 'nl'; } catch (e) {}
       function apply(lang) {
         document.documentElement.lang = lang;
-        document.querySelectorAll('[data-nl]').forEach(function (el) { el.textContent = el.getAttribute('data-' + lang); });
+        document.querySelectorAll('[data-nl]').forEach(function (el) {
+          var value = el.getAttribute('data-' + lang);
+          el.innerHTML = value; // trusted: text and entities written in this file
+        });
         btn.textContent = lang === 'nl' ? 'EN' : 'NL';
         try { localStorage.setItem('lang', lang); } catch (e) {}
         current = lang;
       }
       btn.addEventListener('click', function () { apply(current === 'nl' ? 'en' : 'nl'); });
-      apply(current);
+      if (current !== 'nl') apply(current);
+
+      var items = document.querySelectorAll('.rows li, .flow li, .statement p, .about .big, .contact .wrap > *');
+      if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        items.forEach(function (el) { el.classList.add('reveal'); });
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { threshold: 0.15 });
+        items.forEach(function (el) { io.observe(el); });
+      }
     })();
   </script>
 </body>
