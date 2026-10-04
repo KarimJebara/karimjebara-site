@@ -85,6 +85,7 @@ p { margin: 0; }
 .experience { padding: 40px 0 8px; }
 .names { font-family: var(--serif); font-weight: 600; font-size: clamp(11px, 3.1vw, 27px); letter-spacing: -.01em; white-space: nowrap; }
 .names span { color: var(--tomato); margin: 0 .15em; }
+.names .alt { color: inherit; margin: 0; font-weight: 400; font-size: .7em; opacity: .75; }
 
 /* how I work */
 .how { padding: 64px 0 72px; }
@@ -141,7 +142,7 @@ p { margin: 0; }
   .flow li:nth-child(even) p { margin-left: 0; }
   .wave { height: 80px; }
 }
-@media (max-width: 340px) { .names { white-space: normal; } }
+@media (max-width: 600px) { .names { white-space: normal; font-size: clamp(15px, 4.2vw, 20px); line-height: 1.5; } .names .alt { font-size: .75em; } }
 @media (max-width: 520px) {
   .brand span { font-size: 17px; }
   .nav { gap: 13px; font-size: 15px; }
