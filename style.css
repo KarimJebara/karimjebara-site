@@ -111,6 +111,7 @@ p { margin: 0; }
 .contact { padding: 40px 0 88px; }
 .contact h2 { font-size: clamp(48px, 10vw, 110px); line-height: .95; margin-bottom: 18px; color: var(--tomato); }
 .contact .wrap > p:not(.small) { color: var(--muted); margin-bottom: 26px; }
+.contact .book { margin-bottom: 26px; }
 .mail { display: inline-block; font-family: var(--serif); font-weight: 600; font-size: clamp(24px, 5vw, 44px); letter-spacing: -.02em; text-decoration: none; border-bottom: 4px solid var(--butter); line-height: 1.15; word-break: break-word; }
 .mail:hover { border-color: var(--tomato); }
 .small { margin-top: 22px; font-weight: 700; }
