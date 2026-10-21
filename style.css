@@ -116,7 +116,7 @@ p { margin: 0; }
 @media (max-width: 799px) { .booking-wrap { --crop: 290px; --h: 910px; } }
 @media (max-width: 420px) { .booking-wrap { --crop: 318px; --h: 940px; } }
 .contact .or { margin-bottom: 8px !important; }
-@media (max-width: 640px) { .mail { display: inline-block; font-family: var(--serif); font-weight: 600; font-size: clamp(24px, 5vw, 44px); letter-spacing: -.02em; text-decoration: none; border-bottom: 4px solid var(--butter); line-height: 1.15; word-break: break-word; }
+.mail { display: inline-block; font-family: var(--serif); font-weight: 600; font-size: clamp(24px, 5vw, 44px); letter-spacing: -.02em; text-decoration: none; border-bottom: 4px solid var(--butter); line-height: 1.15; word-break: break-word; }
 .mail:hover { border-color: var(--tomato); }
 .small { margin-top: 22px; font-weight: 700; }
 .small a { text-decoration: none; border-bottom: 2px solid var(--tomato); }
