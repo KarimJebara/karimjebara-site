@@ -111,8 +111,9 @@ p { margin: 0; }
 .contact { padding: 40px 0 88px; }
 .contact h2 { font-size: clamp(48px, 10vw, 110px); line-height: .95; margin-bottom: 18px; color: var(--tomato); }
 .contact .wrap > p:not(.small) { color: var(--muted); margin-bottom: 26px; }
-.booking-wrap { --crop: 205px; --h: 480px; overflow: hidden; height: var(--h); margin: 0 0 36px; border-radius: 20px; background: #fff; border: 1px solid rgba(0,0,0,.08); box-shadow: 0 18px 40px -28px rgba(0,0,0,.35); }
-.booking { display: block; width: 100%; height: calc(var(--h) + var(--crop)); margin-top: calc(var(--crop) * -1); border: 0; }
+.booking-wrap { --s: 1; --crop: 205px; --h: 480px; overflow: hidden; height: var(--h); margin: 0 0 36px; border-radius: 20px; background: #fff; border: 1px solid rgba(0,0,0,.08); box-shadow: 0 18px 40px -28px rgba(0,0,0,.35); }
+.booking { display: block; width: calc(100% / var(--s)); height: calc(var(--h) / var(--s) + var(--crop)); margin-top: calc(var(--crop) * var(--s) * -1); border: 0; transform: scale(var(--s)); transform-origin: 0 0; }
+@media (min-width: 1100px) { .booking-wrap { --s: 1.35; --h: 632px; width: 1040px; margin-left: calc(50% - 520px); } }
 @media (max-width: 799px) { .booking-wrap { --crop: 290px; --h: 910px; } }
 @media (max-width: 420px) { .booking-wrap { --crop: 318px; --h: 940px; } }
 .contact .or { margin-bottom: 8px !important; }
